@@ -37,7 +37,7 @@
     "no-var-requires": true,
     "object-literal-sort-keys": false,
     "one-line": [true, "check-open-brace", "check-whitespace"],
-    "quotemark": [true, "single", "avoid-escape"],
+    "quotemark": [true, "double", "avoid-escape"],
     "radix": false,
     "semicolon": [true],
     "switch-default": false,
@@ -60,7 +60,19 @@
         "variable-declaration": "nospace"
       }
     ],
-    "variable-name": [true, "check-format", "allow-leading-underscore", "ban-keywords"],
-    "whitespace": [true, "check-branch", "check-decl", "check-operator", "check-separator", "check-type"]
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "ban-keywords"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ]
   }
 }
