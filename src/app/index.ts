@@ -33,7 +33,10 @@ app.post("/posts", async (req, res) => {
     .get("posts")
     .push(req.body)
     .last()
-    .assign({ id: "GOCLIMB" + uuid.v4() })
+    .assign({
+      id: "GOCLIMB" + uuid.v4(),
+      postDateTime: Date.now()
+    })
     .write();
 
   res.send(post);
