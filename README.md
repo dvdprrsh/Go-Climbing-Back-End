@@ -1,28 +1,37 @@
-# README
+# go-climbing-backend
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Gone are the days of PHP, NodeJS enters the ring
 
 ### File structure
 
-- create.php - Adds data to print.json based on URL arguments passed
-- delete.php - Removes json object from print.json based on URL argumet passed
-- print.json - Stores posts
-
+```
+│
+│── README.MD             <-- This instructions file
+│── db.json       		  <-- Json database file
+│── package.json          <-- NodeJS dependencies and scripts
+│── node_modules          <-- Installed packages
+│── src                   <-- Source directory
+│   └── app               <-- index.ts to run backend
+│   └── fakeData          <-- Unused
+│   └── local             <-- Console output
+```
 ### Arguments
 
-### Create.php
+### GET
 
-- postid - This is automatically generated but can be passed if needed
-- posttitle - Title of the post
-- postbody - Body of the post
-- username - Username of post submitter
+- /posts    <-- Returns a list of forum posts in Json
+- /gyms     <-- Returns a list of Gyms in Json
+- /crags    <-- Returns a list of crags in Json
 
-### Delete.php
+### POST
 
-- postid - PostID of post(Stored under 'id' in print.json)
+- /posts <-- title,body,profileimg,username Adds a post to db.json
+
+### DELETE
+
+- /posts/id <-- Deletes a post that matches the ID passed
 
 ### How to use
 
-- API can be accessed at https://empiredigital.eu/goclimbing/ (Directory listing is enabled)
-- MacOS - Can be run locally using php -S localhost:8000
-- Windows - XAMPP?
+- API can be accessed at https://51.255.163.79:3001/
+- Can be run locally using npm start
