@@ -33,5 +33,5 @@ Gone are the days of PHP, NodeJS enters the ring
 
 ### How to use
 
-- API can be accessed at https://51.255.163.79:3001/
+- API can be accessed at http://51.255.163.79:3001/
 - Can be run locally using npm start
